@@ -43,7 +43,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .user{
@@ -66,6 +66,9 @@ footer{
     font-weight: 700px;
 }
 
+.icon{
+    z-index: 1;
+}
 .share.icon{
     background-color:hsl(210, 46%, 95%) ;
     border-radius: 50%;
@@ -78,7 +81,8 @@ footer{
 button{
     border:none;
     background: none;
-    z-index: 2;
+    z-index: 20;
+    transition: opacity 300ms ease-in-out;
 }
 .share.icon:hover{
     background:hsl(212, 23%, 69%);;
@@ -102,20 +106,16 @@ button{
 }
 
 .text{
-    margin-left: 25px;
+    margin: 0 10px 0 20px;
     opacity: 0.8;
 }
 .iconsList{
-    height: 15px;
-    margin: 15px;
+    height: 20px;
+    margin: 5px;
 }
 
 .iconsList.t{
     margin-right: 20px;
-}
-
-.text{
-    display: inline;
 }
 
 .attribution { 
@@ -149,10 +149,17 @@ button{
 
     h2{
         font-size: 16px;
+        margin-top: 20px;
     }
 
     p{
         font-size: 13px;
+    }
+
+    .share.icon{
+        height: 20px;
+        width: 20px;
+        bottom: 10px;
     }
     
     #bubble{
